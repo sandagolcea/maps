@@ -1,0 +1,19 @@
+body {
+  text-align: center;
+  font-family: Papyrus;
+  background-image: url("papyrus.jpg");
+  background-attachment: fixed;
+}
+
+#message {
+  height: 300px;
+  width: 200px;
+
+  background-color: white;
+  border: 1px solid #000000;
+  opacity: 0.5;
+
+  position: absolute;
+  top: 150px;
+  left: 150px;
+}
