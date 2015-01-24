@@ -1,11 +1,17 @@
 window.onload = function() {
   console.log("Hello");
+  
+  for( i=0; i<regions.length; i++ ) {
+    
+    regions[i].mouseover(function(e){
+      this.node.style.opacity = 0.7;
+      console.log(this.data('id'));
+      // document.getElementById('region-name').innerHTML = this.data('region');
+    });
 
-  // this works if put alone in the map.js
-  regions[0].mouseover(function(e){
-    this.node.style.opacity = 0.7;
-    // document.getElementById('region-name').innerHTML = this.data('region');
-    console.log("hi");
+    regions[i].mouseout(function(e) {
+      this.node.style.opacity=1;
+    });
   }
-);
+
 }
